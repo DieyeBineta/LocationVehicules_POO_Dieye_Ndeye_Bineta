@@ -1,0 +1,173 @@
+body{
+    background-color: var(--bg-light);
+}
+
+main{
+    margin-top: 20px;
+}
+
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    z-index: 1000;
+}
+
+/* .header-black{
+    background-color: var(--text-main);
+}
+
+.header-black ul li a{
+    color: var(--white);
+} */
+
+.logo a img{
+    width: 100px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+    background-color: rgba(0, 0, 0, 0.232);
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 14px;
+}
+
+.menu li a:hover{
+    color: var(--accent-hover);
+}
+
+.profil{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.prof-img{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.prfname p{
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.prfname span{
+    color: var(--text-muted);
+    font-size: 12px;
+}
+/* FIN HEADER */
+
+/* VUE D4ENSEMBLE */
+.preview{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.preview-item{
+    background-color: var(--white);
+    padding: 30px 20px 10px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.preview-item > img{
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0.3;
+}
+
+.prev span{
+    color: var(--text-muted);
+}
+
+.prev p{
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--accent);
+}
+/* FIN VUE D4ENSEMBLE */
+
+/* DEMANDES */
+table{
+    width: 100%;
+    /* background-color: white; */
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /* border: 1px solid black; */
+    border: none;
+    border-bottom: 1px solid var(--black);
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #e2e1e1;
+}
+
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+thead{
+    background-color: var(--text-main);
+    color: white;
+}
+
+th, td {
+    border: none;
+}
+
+table a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+table a:first-child {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    color: white;
+}
+
+table a:last-child {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* FIN DEMANDES */

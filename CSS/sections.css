@@ -1,0 +1,202 @@
+section{
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.title h2{
+    text-align: right;
+    margin-right: 30px;
+    font-size: 36px;
+}
+
+.title p{
+    margin-right: 200px;
+    text-align: left;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* SERVICES */
+
+.service-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.img img{
+    width: 100px;
+}
+
+.item{
+    display: flex;
+    text-align: left;
+    gap: 20px;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    padding: 10px 20px;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.item:hover{
+    box-shadow: 0px 5px 10px #0000003a;
+    transform: translateY(-5px);
+}
+
+.item p{
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* FIN SERVICES */
+
+/* VOITURES */
+.voiture-grid{
+    margin-top: 30px;
+}
+
+.voiture-item{
+    background-color: var(--bg-light);
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 450px;
+    box-sizing: content-box;
+}
+
+.icon img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+/* .descgrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.descgrid img{
+    width: 20px;
+} */
+
+
+.details{
+    padding: 0px 15px;
+}
+
+.price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.price p{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.price a{
+    text-decoration: none;
+    margin: 0px 50px;
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 6px;
+    font-family: 500;
+    font-size: 14px;
+}
+
+.price a:hover{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.slick-slide{
+    margin: 0px 20px;
+}
+
+.slick-arrow{
+    position: absolute;
+    top: -50px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.slick-next{
+    right: 0;
+}
+
+.slick-prev{
+    right: 50px;
+}
+
+.slick-dots{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.slick-dots li button{
+    display: none;
+}
+
+.slick-dots li{
+    background-color: var(--text-muted);
+    width: 40px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.slick-dots .slick-active{
+    width: 50px;
+    background-color: var(--text-main);
+    transition: all 0.6s;
+}
+
+/* FIN VOITURES */
+
+/* STEPS */
+
+.processus-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.processus-item{
+    align-items: center;
+    background-color: var(--bg-light);
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.processus-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px #0000003a;
+}
+
+.processus-item h4{
+    margin-bottom: -10px;
+}
+
+.processus-item p{
+    color: var(--text-muted);
+}

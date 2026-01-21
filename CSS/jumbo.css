@@ -1,0 +1,81 @@
+.jumbo-content{
+    background: linear-gradient(#00000060, #00000060), url(../images/tabea-schimpf-O7WzqmeYoqc-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* row-gap: 200px; */
+    text-align: center;
+}
+
+.title-section{
+    text-align: center;
+    color: var(--white);
+}
+
+.title-section p{
+    padding: 0px 420px;
+    font-size: 13px;
+    color: rgb(193, 192, 192);
+    margin-bottom: 30px;
+}
+
+.title-section h1{
+    letter-spacing: 2px;
+    color: var(--white);
+}
+
+.title-section a{
+    text-decoration: none;
+    padding: 10px 36px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.jumbo-content form{
+   background-color: var(--white);
+   margin: 0px 100px;
+   padding: 30px ;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   /* justify-content: space-between; */
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.jumbo-content input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+
+.jumbo-content label{
+    display: block;
+    text-align: left;
+}
+
+input:focus{
+    outline: none;
+}
+
+.jumbo-content button{
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    /* padding:  0px 10px; */
+    height: 40px;
+    margin-top: 20px;
+}
+
+.jumbo-content button:hover{
+    background-color: var(--text-main);
+}

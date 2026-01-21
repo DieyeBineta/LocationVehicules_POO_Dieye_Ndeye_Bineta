@@ -1,0 +1,82 @@
+.user-menu-container {
+position: relative; /* Important pour positionner le menu par rapport à ce parent */
+display: inline-block;
+}
+
+.user-card {
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 8px 15px;
+border-radius: 8px;
+}
+
+/* Le menu caché */
+.dropdown-menu {
+display: none; /* Caché par défaut */
+position: absolute;
+top: 100%; /* Juste en dessous du bouton */
+left: 0;
+min-width: 160px;
+background-color: white;
+box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+border-radius: 4px;
+padding: 8px 0;
+list-style: none;
+z-index: 1000;
+margin-top: 5px;
+}
+
+/* Affichage quand la classe 'show' est ajoutée */
+.dropdown-menu.show {
+display: block;
+}
+
+/* Style des liens du menu */
+.dropdown-menu li a {
+display: block;
+padding: 10px 20px;
+text-decoration: none;
+color: #333;
+font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+background-color: #f8f9fa;
+}
+
+.logout { color: #e74c3c !important; }
+.arrow-down{
+    cursor: pointer;
+}
+
+
+
+
+.profil{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.prof-img{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.prfname p{
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--white);
+}
+
+.prfname span{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.591);
+}

@@ -1,0 +1,146 @@
+/* body{
+    background-color: var(--bg-light);
+} */
+
+.cars-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cars-content h4{
+    margin-bottom: 0px;
+}
+.description img{
+    width: 15px;
+}
+
+.car-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-grid{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.price{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.price p{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.price span{
+    color: var(--text-muted);
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.description div{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.description div span{
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.actions{
+    display: flex;
+    gap: 10px;
+}
+
+.actions a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--text-muted);
+    border-radius: 50px;
+}
+
+/* FILTRES */
+
+.recherche-content form{
+    display: flex;
+    gap: 5px;
+}
+
+.recherche-content input{
+    /* padding: 16px 100px; */
+    /* padding-left: 20px; */
+    border-radius: 10px;
+    border: 1px solid var(--text-muted);
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding: 16px 200px 16px 45px;
+    font-size: 12px;
+    border: 1px solid #DADEE7;
+    /* border-radius: 8px; */
+}
+
+.recherche-content input:focus{
+    outline: none;
+}
+
+.recherche-content input::placeholder{
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.search{
+    padding: 8px 30px;
+    background: linear-gradient(var(--accent), var(--accent-hover));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.search:hover{
+    background: linear-gradient(var(--accent-hover), var(--accent));
+}
+
+.recherche-content a{
+    padding: 10px 30px;
+    background-color: var(--text-main);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.recherche-content a:hover{
+    background-color: var(--black);
+    transition: all 0.3s ease;
+}
+.recherche-content{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 150px; */
+    padding: 20px 0px;
+}
+/* FIN FILTRES */

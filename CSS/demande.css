@@ -1,0 +1,128 @@
+.title{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.present-auto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.datedeprise{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.total{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.facture{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.facture span:first-child{
+    color: var(--text-muted);
+}
+
+.facture span:last-child{
+    font-weight: 500;
+}
+
+.present-auto form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img-auto{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.img-auto img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.price{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 0px 20px;
+}
+
+.price > p{
+    text-align: left;
+    font-size: 12px;
+}
+
+.desc{
+    text-align: right;
+}
+.desc p{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.desc span{
+    color: var(--text-muted);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.present-auto form label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.present-auto form input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    border-radius: 8px;
+}
+
+.present-auto form input:focus {
+    outline: none;
+}
+
+h4{
+    margin-bottom: 5px;
+}
+
+.button{
+    margin: 15px 0px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background-color: black;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+}
